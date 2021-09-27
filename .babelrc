@@ -3,7 +3,12 @@
     "env"
   ],
   "plugins": [
-    "transform-runtime"
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "corejs": 2
+      }
+    ]
   ],
   "parserOpts": {
     "plugins": [

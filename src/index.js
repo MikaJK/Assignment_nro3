@@ -22,7 +22,6 @@ async function getData(imageContainer, breedName) {
   var imageUrl = await randomPicture.json();
   const response = await fetch(imageUrl["message"]);
   const blob = await response.blob();
-  console.log(blob);
   const url = URL.createObjectURL(blob);
   const image = new Image();
   image.src = url;
