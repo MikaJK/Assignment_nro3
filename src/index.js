@@ -64,5 +64,5 @@ function initializeCode() {
     nro = Math.floor(Math.random() * list.length);
     cont.append(getTemplate(list[i], fetchlist[i]));
   }
-  document.getElementById("app").append(cont);
+  document.body.append(cont);
 }
